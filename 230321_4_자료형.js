@@ -29,7 +29,6 @@ let rst = `${dan} * ${gugu}은 ${dan * gugu} 입니다.`;
 console.log(rst);
 
 /* ------------------------------------------------------ */
-
 // 숫자형 (Number) : 자바스크립트는 정수와 실수를 구분하지 않고 전부 하나의 숫자 자료형으로 취급 합니다.
 let num1 = 10;
 let num2 = 0.1;
@@ -45,7 +44,6 @@ console.log(typeof(x));
 console.log(typeof(x.toString()));
 
 /* ------------------------------------------------------ */
-
 // 논리형 : 참과 거짓을 구분 (true / false)
 let age = 20;
 let isAdult = (age > 18) ? true : false;
