@@ -8,13 +8,16 @@ b = Number(tmp);
 tmp = prompt("세번째 수 입력 : ", "");
 c = Number(tmp);
 
-if(a > b) {
-  if(a > c) max = a;
-  else max = c;
-} else {
-  if(b > c) max = b;
-  else max = c;
-}
+max = a;
+if(b > a) max = b;
+if(c > b) max = c;
+// if(a > b) {
+//   if(a > c) max = a;
+//   else max = c;
+// } else {
+//   if(b > c) max = b;
+//   else max = c;
+// }
 if(a > b) {
   if(b > c) min = c;
   else min = b;

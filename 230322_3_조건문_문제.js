@@ -21,9 +21,10 @@ let today = new Date();
 let month = today.getMonth() + 1;
 let date = today.getDate();
 let birth = String(month) + String(date);
-if(birth.length == 3) birth = "0" + birth;
+if(today.getMonth() < 10) birth = "0" + birth;
+if(today.getDate() < 10) birth = birth + "0";
 
-if(Number(birth) < Number(jumin.substring(2,6))) age = (today.getFullYear() - birthYear) - 1;
-else age = today.getFullYear() - birthYear;
+if(birth < jumin.substring(2,6)) age = (today.getFullYear() - Number(birthYear)) - 1;
+else age = today.getFullYear() - Number(birthYear);
 
 document.write(`<h3> 현재 당신의 나이는 ${age}살 이고, 성별은 ${gender} 입니다. </h3>`);
