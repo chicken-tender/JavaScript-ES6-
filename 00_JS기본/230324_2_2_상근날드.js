@@ -1,26 +1,20 @@
-let hamburgerPrice = [];
-let beveragePrice = [];
-let minHamburgerPrice, minBeveragePrice;
+let menu = [];
+let tmp;
+tmp = prompt("상덕버거 가격 입력 : ", "");
+menu[0] = Number(tmp);
+tmp = prompt("중덕버거 가격 입력 : ", "");
+menu[1] = Number(tmp);
+tmp = prompt("하덕버거 가격 입력 : ", "");
+menu[2] = Number(tmp);
+tmp = prompt("콜라 가격 입력 : ", "");
+menu[3] = Number(tmp);
+tmp = prompt("사이다 가격 입력 : ");
+menu[4] = Number(tmp);
 
-for(let i = 0; i < 3; i++) {
-  hamburgerPrice[i] = prompt("햄버거 가격 : " + "");
-}
-for(let i = 0; i < 2; i++) {
-  beveragePrice[i] = prompt("음료 가격 : " + "");
-}
-
-minHamburgerPrice = hamburgerPrice[0];
-if(hamburgerPrice[0] > hamburgerPrice[1]) {
-  if(hamburgerPrice[1] > hamburgerPrice[2]) minHamburgerPrice = hamburgerPrice[2];
-  else minHamburgerPrice = hamburgerPrice[1];
-}
-if(hamburgerPrice[0] > hamburgerPrice[2]) minHamburgerPrice = hamburgerPrice[2];
-
-minBeveragePrice = beveragePrice[0];
-if(beveragePrice[0] > beveragePrice[1]) {
-  minBeveragePrice = beveragePrice[1];
-}
-
-let totalPrice = (Number(minHamburgerPrice) + Number(minBeveragePrice)) - 50;
-// document.write(`세트 메뉴 총 가격 : ${totalPrice}원 입니다.`);
-document.getElementById("value").innerHTML = (Number(minHamburgerPrice) + Number(minBeveragePrice) - 50) + "원"; // DOM 사용
+let minB = menu[0];
+let minD = menu[3];
+for (let i = 0; i < menu.length; i++) {
+    if (i < 3 && minB > menu[i]) minB = menu[i];
+    if (i > 2 && minD > menu[i]) minD = menu[i];
+};
+document.getElementById("value").innerHTML = (minD + minB - 50) + "원";
