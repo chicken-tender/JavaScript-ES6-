@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+    * input 태그로 첫번째 숫자 입력 받기 (예. 10) 
+      -> let firstNum = document.getElementById("num1").value;
+    * select 콤보 박스로 (사칙연산 선택) (+, -, *, /)
+      -> let op = document.getElementById("operator").value;
+    * input 태그로 두번째 숫자 입력 받기 (예. 20)
+      -> let secondNum = document.getElementById("num2").value;
+    * 계산 버튼을 만들기
+      -> html에서 자바스크립트 함수 호출 : 
+        <button onclick="함수명()">계산하기</button>
+  -->
+</head>
+<body>
+  <label for="num1">첫번째 숫자</label>
+  <input id="num1" type="number">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <label for="num2">두번째 숫자</label>
+  <input id="num2" type="number">
+  <button onclick="calculator()">계산하기</button>
+  <br><br>
+  <p id="rst"></p>
+
+  <script src="./230327_1_1_계산기.js"></script>
+</body>
+</html>

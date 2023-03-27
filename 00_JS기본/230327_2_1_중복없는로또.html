@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로! 또!</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .item {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 47px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .item1 {
+        background-color: #845ec2;
+      }
+      .item2 {
+        background-color: #d65db1;
+      }
+      .item3 {
+        background-color: #ff6f91;
+      }
+      .item4 {
+        background-color: #ff9671;
+      }
+      .item5 {
+        background-color: #ffc75f;
+      }
+      .item6 {
+        background-color: #dbdb03;
+      }
+      .button-container {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        box-shadow: 1px 1px 2px #000;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>이번주 로또 당첨 예상 번호</h1>
+    <div class="button-container">
+      <button onclick="lottoNum()">클릭!</button>
+    </div>
+    <div class="container">
+      <div class="item item1"></div>
+      <div class="item item2"></div>
+      <div class="item item3"></div>
+      <div class="item item4"></div>
+      <div class="item item5"></div>
+      <div class="item item6"></div>
+    </div>
+    <script src="./230327_2_1_중복없는로또.js"></script>
+  </body>
+</html>
