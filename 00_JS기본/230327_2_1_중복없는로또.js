@@ -4,7 +4,7 @@ function lottoNum() {
   let tmp;
 
   while(lotto.length < 6) {
-    tmp = Math.floor(Math.random() * 44 + 1);
+    tmp = Math.floor(Math.random() * 45 + 1);
     if(!lotto.includes(tmp)) lotto.push(tmp);
   }
   let items = document.querySelectorAll(".item");
