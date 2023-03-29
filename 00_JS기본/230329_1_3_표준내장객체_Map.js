@@ -8,9 +8,9 @@ map.set("name", "유나");
 map.set("email", "yuna@naver.com");
 map.set("addr", "서울시 강남구");
 
-// console.log(map.size);
-// console.log(map.get("name"));
-// console.log(map.get("email"));
+console.log(map.size);
+console.log(map.get("name"));
+console.log(map.get("email"));
 
 map.forEach((item) => {
   console.log(item);
