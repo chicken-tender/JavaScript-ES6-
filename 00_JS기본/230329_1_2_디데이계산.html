@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    #box {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      margin: 0 auto;
+      border-radius: 80px;
+      border: 1px solid #B0A8B9;
+    }
+    #box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-image: url("./230329_1_1_아구몬.png");
+    }
+    #box #value {
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      top: 150px;
+      left: 10px;
+      position: relative;
+    }
+    #value:hover {
+      transform: scale(2,2);
+      color: #C34A36;
+    }
+    .input {
+      text-align: center;
+      padding: 10px 0 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>학원 수료 D-DAY</h1>
+  <div class="input">
+    <label for="text">기준 날짜 (년-월-일) </label>
+    <input type="text" id="date">
+  <button onclick="dDayCalculate()">계산하기!</button>
+  </div>
+  <div id="box">
+    <p id="value"></p>
+  </div>
+  <script src="./230329_1_2_디데이계산.js"></script>
+</body>
+</html>

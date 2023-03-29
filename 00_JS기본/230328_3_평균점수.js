@@ -9,7 +9,7 @@ let tmp = [];
 let sum = 0;
 for(let i = 0; i < 5; i++) {
   tmp[i] = prompt("점수를 입력하세요. : " + "");
-  score[i] = Number(tmp[i]);
+  score[i] = Number(tmp[i]);  
   if(score[i] < 40) score[i] = 40;
   sum += score[i];
 }

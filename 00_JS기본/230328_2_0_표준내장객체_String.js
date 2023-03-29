@@ -77,7 +77,7 @@ console.log(addr.charAt(0));
 
 // charCodeAt() : 문자열에 특정 인덱스에 해당하는 문자 하나의 유니코드 반환(아스키코드)
 let str20 = "HELLO WORLD";
-console.log(str.charCodeAt(0));
+console.log(str20.charCodeAt(0));
 
 // ** split() : 특정 문자 기준으로 문자열을 잘라서 새로운 문자열 배열 생성
 let birthDay = "1999-02-03";
