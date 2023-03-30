@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form, button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <select name="opt">
+      <option value="apple">사과</option>
+      <option value="banana">바나나</option>
+      <option value="orange">오렌지</option>
+      <option value="watermelon">수박</option>
+    </select>
+  </form>
+  <form>
+    <label><input type="checkbox" value="apple">🍎</label>
+    <label><input type="checkbox" value="banana">🍌</label>
+    <label><input type="checkbox" value="orange">🍊</label>
+    <label><input type="checkbox" value="lemon">🍋</label>
+  </form>
+  <form name="frm">
+    <input type="file" name="upload">
+  </form>
+  <button onclick="upload()">파일 업로드</button>
+  <script src="./230330_4_DOM_폼조작.js"></script>
+</body>
+</html>
