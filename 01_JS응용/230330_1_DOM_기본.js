@@ -7,7 +7,7 @@ console.log(el); // <h1 id="title">제목 입니다.</h1>
 const classEl = document.getElementsByClassName("text");
 console.log(classEl);
 /* 0: p.text
-   1: p.text
+    1: p.text
    length: 2 */
 console.log(classEl[0]); // <p class="text">본문 내용 입니다.</p>
 for(let el of classEl) console.log(el); // 향상된 for문과 유사
