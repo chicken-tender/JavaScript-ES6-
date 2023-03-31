@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+#container {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+input[type="text"] {
+  width: 370px;
+  float: left;
+  height: 30px;
+  padding-left: 30px;
+}
+button {
+  width: 90px;
+  height: 30px;
+  float: right;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: #fff;
+  border: none;
+}
+ul {
+  padding-top: 50px;
+  list-style: none;
+}
+li {
+  line-height: 2; /* 폰트 크기의 2배 */
+}
+li:hover {
+  cursor: pointer;
+}

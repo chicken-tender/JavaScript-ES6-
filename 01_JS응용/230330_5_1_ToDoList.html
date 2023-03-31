@@ -16,14 +16,15 @@
   </style>
 </head>
 <body>
-  <h1>🔥DEV STUDY TO-DO List🔥</h1>
+  <h1>🔥STUDY TO-DO List ver.2🔥</h1>
   <p>공부할 과목을 추가해보세요.</p>
   <p>공부가 끝난 과목은 클릭하세요.</p>
-  <label for="stydy">과목명📚</label>
-  <input type="text" id="study">
-  <button onclick="addStudy()">추가하기</button>
-  <div id="planner"></div>
-
+  <form action="#">
+    <label for="stydy">과목명📚</label>
+    <input type="text" id="study" autofocus>
+    <button onclick="addStudy(); return false;">추가하기</button>
+    <div id="planner"></div>
+  </form>
   <script src="./230330_5_1_스터디플래너.js"></script>
 </body>
 </html>
