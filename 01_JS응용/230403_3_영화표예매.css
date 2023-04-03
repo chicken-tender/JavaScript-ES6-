@@ -1,0 +1,50 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+#seat {
+  display: none;
+}
+.seatInput {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.button-container button {
+  width: 80px;
+  height: 40px;
+  background-color: #e2e7f7;
+  border: none;
+  box-shadow: 1px 1px 1px #696969;
+}
+#reserveBtn {
+  background-color: #e2e7f7;
+  border: none;
+  box-shadow: 1px 1px 1px #696969;
+}
+.seat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+.seat-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #696969;
+}
+#result, h1 {
+  text-align: center;
+}
