@@ -21,9 +21,12 @@ reserveBtn.addEventListener("click", function() {
   for(let e of seat) {
     let tmp = e.className.substring(10);
     if(tmp == seatNum) {
-      if(e.style.backgroundColor == "royalblue") alert("이미 예매가 완료된 좌석 입니다.");
-      e.style.backgroundColor = "royalblue";
-      alert("예매가 완료되었습니다.");
+      if(e.style.backgroundColor == "royalblue") {
+        alert("이미 예매가 완료된 좌석 입니다.");
+      } else {
+        e.style.backgroundColor = "royalblue";
+        alert("예매가 완료되었습니다.");
+      }
       const inputBox = document.querySelector("#seatNum");
       inputBox.value = "";
       document.getElementById("seatNum").focus();

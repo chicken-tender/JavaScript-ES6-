@@ -11,7 +11,7 @@ btnEl.addEventListener("click", function(e) {
 
 const inputEl = document.querySelector("input");
 inputEl.addEventListener("keydown", function(event) {
-  console.log(`keyCode : ${event.key}`);
+  console.log(`key : ${event.key}`);
   console.log(`ctrlKey : ${event.ctrlKey}`);
   console.log(`altKey : ${event.altKey}`);
   console.log(`shiftKey : ${event.shiftKey}`);
