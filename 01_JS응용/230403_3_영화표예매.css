@@ -27,9 +27,11 @@ body {
   background-color: #e2e7f7;
   border: none;
   box-shadow: 1px 1px 1px #696969;
+  cursor: pointer;
 }
 #reserveBtn {
   background-color: #e2e7f7;
+  cursor: pointer;
   border: none;
   box-shadow: 1px 1px 1px #696969;
 }
