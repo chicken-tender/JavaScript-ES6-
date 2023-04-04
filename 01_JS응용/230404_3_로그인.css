@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.item > p {
+  text-align: right;
+  font-size: 0.8em;
+  color: #ff0000;
+  display: none;
+}
+.item > input {
+  border-radius: 10px;
+  border: 1px solid #696969;
+  width: 200px;
+  height: 40px;
+}
+.item > button {
+  border-radius: 10px;
+  border: 1px solid #696969;
+  width: 60px;
+  height: 40px;
+  background-color: #E5F0FF
+}
+#register {
+  border-radius: 10px;
+  border: 1px solid #696969;
+  width: 260px;
+  height: 40px;
+}
