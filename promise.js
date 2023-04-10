@@ -33,4 +33,6 @@ fetchNumber
     setTimeout(() => resolve(num - 1), 1000);
   });
 })
-.then(num => console.log(num));
+.then(num => console.log(num)); // 5
+
+
